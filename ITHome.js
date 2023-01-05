@@ -1,8 +1,14 @@
 function indexAD(obj) {
+  console.log("开始!");
   let data = obj.data;
-  let lsit = data["list"];
-  data["list"] = lsit.filter(item => item.flag != 2);
+  let list = data["list"];
+  console.log(list.length);
+  let newItems = [];
+  newItems = list.filter(item => item.flag != 2);
+  console.log(newItems.length);
+  data.list = newItems;
   obj.data = data;
+  console.log("结束!");
   return obj;
 }
 
