@@ -1,7 +1,7 @@
 function indexAD(obj) {
   let data = obj.data;
   let lsit = data["list"];
-  data["list"] = lsit.filter(item => item.smallTags.tagType != 2);
+  data["list"] = lsit.filter(item => item.flag != 2);
   return obj;
 }
 
