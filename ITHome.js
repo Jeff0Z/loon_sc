@@ -4,7 +4,7 @@ function indexAD(obj) {
   let list = data["list"];
   console.log(list.length);
   let newItems = [];
-  newItems = list.filter(item => item.flag != 2);
+  newItems = list.filter(item => item.feedContent.flag != 2);
   console.log(newItems.length);
   data.list = newItems;
   obj.data = data;
