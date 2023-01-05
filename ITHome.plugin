@@ -1,0 +1,7 @@
+#!name= IT之家去广告
+#!icon= https://raw.githubusercontent.com/Jeff0Z/loon_sc/main/ithome.png
+
+[Script]
+http-response ^https?:\/\/napi\.ithome\.com\/api\/news\/index\/* requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Jeff0Z/loon_sc/main/ITHome.js,tag=IT之家去列表广告
+[MITM]
+hostname = napi.ithome.com
